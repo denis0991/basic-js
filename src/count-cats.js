@@ -25,7 +25,7 @@ catsCount++;
 }
 }
 
-return catsCount;;
+return catsCount;
   // remove line with error and write your code here
 }
 
