@@ -15,6 +15,8 @@ function getSeason(date) {
   try {
     if (!date) {
       return 'Unable to determine the time of year!';
+    } else if (isNaN(date)) {
+      throw new Error("Invalid date!")
     } else if (date.getMonth() == 0 || date.getMonth() == 1 || date.getMonth() == 11) {
       return 'winter'
     } else if (date.getMonth() >= 2 && date.getMonth() <= 4) {
